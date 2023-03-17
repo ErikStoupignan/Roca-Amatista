@@ -1,20 +1,18 @@
-import './App.css';
+import Navbar from "../navbar/navbar";
+import MainPage from "../home/main-page";
+import "swiper/css/bundle";
+import '../../index.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <section className="AppContainer">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
       </header>
-    </div>
+      <div className="Containerpages">
+        <MainPage />
+      </div>
+    </section>
   );
 }
 
